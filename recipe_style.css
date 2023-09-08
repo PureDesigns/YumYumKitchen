@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Ribeye+Marrow&family=Tajawal:wght@300&display=swap');
+
+/*
+    font-family: 'Ribeye', cursive;
+
+    font-family: 'Ribeye Marrow', cursive;
+
+    font-family: 'Tajawal', sans-serif;
+*/
+
+/* Rachel Wood 7555998 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav ul {
+    background-color: #1e6708;
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background: #1e6708;
+    color:#ffffff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background:#2b920b;
+    color:  	#fcffd0
+}
+
+header {
+    background: #aaffcc;
+    padding: 10px 0;
+    background-image: url('pics/veggies_3.jpg');
+    height: 350px;
+    background-size: cover;
+    background-position: 40%;
+}
+
+header h1 {
+    transform: translateY(100px);
+    font-family: 'Ribeye', cursive;
+    font-size: 75px;
+    color: #1e6708;
+    text-align: center;
+}
+
+header span {
+    display: block;
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 50px;
+    color: rgba(249, 138, 4, 2);
+    text-shadow: 4px 2px rgba(70, 70, 70, 2);
+}
+
+main {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "A B B B"
+    "A C C C"
+    "A D D D";
+    grid-gap: 5px 0;
+    grid-row: 1 / span 2;
+    padding-right: 10px;
+}
+
+section h2 {
+    font-family: 'Ribeye', cursive;
+    font-size: 25px;
+}
+
+.ingredients {
+    grid-area: A;
+    background: fixed;
+    background-color:  	 	#7e6c54;
+    width: 500px;
+    margin: 10px;
+    color:#fff;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 19px;
+    line-height: 2.5;
+}
+
+.directions {
+    grid-area: B;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.img {
+    grid-area: C;
+    margin: 10px auto 20px;
+    display: block;
+    width: 99%;
+}
+
+.nut {
+    grid-area: D;
+}
+
+section:nth-of-type(4) ul {
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+section:nth-of-type(4) li {
+    border: 1px solid #000;
+    margin: 5px;
+    display: inline-block;
+}
+
+ul span{
+    display: block;
+    padding: 1rem;
+    border-top: 2px solid #000;
+    text-align: center;
+}
+
+ul li span:nth-of-type(1) {
+    background-color: #ddd;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(181, 181, 181, 2);    
+    height: 40px;
+    padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #4c4c4c;
+}
